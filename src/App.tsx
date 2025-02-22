@@ -1,12 +1,7 @@
-import './index.css'
+const App = () => {
 
-function App() {
-  
-  return (
-    <>
-      <h1 style={{backgroundColor: "red"}}>Hello World</h1>
-    </>
-  )
+  return <h1>Hello</h1>
+
 }
 
-export default App
+export default App;
