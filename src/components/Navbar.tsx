@@ -3,8 +3,9 @@ import { FC, MouseEvent, useEffect, useRef } from "react";
 
 // // Types
 import { INavItemType } from "../types/NavItemType";
+import { INavbarPropType } from "../types/NavbarPropType";
 
-const Navbar: FC<{navOpen: boolean}> = ({ navOpen }) => {
+const Navbar: FC<INavbarPropType> = ({ navOpen }) => {
   const lastActiveLink = useRef<HTMLAnchorElement | null>(null);
   const activeBox = useRef<HTMLDivElement | null>(null)
 
