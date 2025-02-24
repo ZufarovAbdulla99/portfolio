@@ -1,14 +1,13 @@
+// Node modules
 import { FC } from "react";
+
+// Types
+import { IButtonType } from "../types/ButtonType";
+
 
 // Primary Button
 
-const ButtonPrimary: FC<{
-  href?: string;
-  target?: string;
-  label: string;
-  icon: string;
-  classes?: string;
-}> = ({ href, target = "_self", label, icon, classes }) => {
+const ButtonPrimary: FC<IButtonType> = ({ href, target = "_self", label, icon, classes }) => {
   if (href) {
     return (
       <a href={href} target={target} className={"btn btn-primary" + classes}>
@@ -38,13 +37,7 @@ const ButtonPrimary: FC<{
 
 // Outline Button
 
-const ButtonOutline: FC<{
-    href?: string;
-    target?: string;
-    label: string;
-    icon: string;
-    classes?: string;
-  }> = ({ href, target = "_self", label, icon, classes }) => {
+const ButtonOutline: FC<IButtonType> = ({ href, target = "_self", label, icon, classes }) => {
     if (href) {
       return (
         <a href={href} target={target} className={"btn btn-outline" + classes}>
