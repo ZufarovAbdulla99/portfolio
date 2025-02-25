@@ -7,7 +7,7 @@ import { INavbarPropType } from "../types/NavbarPropType";
 
 const Navbar: FC<INavbarPropType> = ({ navOpen }) => {
   const lastActiveLink = useRef<HTMLAnchorElement | null>(null);
-  const activeBox = useRef<HTMLDivElement | null>(null)
+  const activeBox = useRef<HTMLDivElement | null>(null);
 
   const initActiveBox = () => {
     if (!activeBox.current || !lastActiveLink.current) return;
@@ -16,10 +16,9 @@ const Navbar: FC<INavbarPropType> = ({ navOpen }) => {
     activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
     activeBox.current.style.height = lastActiveLink.current.offsetHeight + "px";
   };
-  
 
-  useEffect(initActiveBox, [])
-  window.addEventListener('resize', initActiveBox)
+  useEffect(initActiveBox, []);
+  window.addEventListener("resize", initActiveBox);
 
   const activeCurrentLink = (event: MouseEvent<HTMLAnchorElement>) => {
     if (!activeBox.current) return;
@@ -33,8 +32,7 @@ const Navbar: FC<INavbarPropType> = ({ navOpen }) => {
     activeBox.current.style.left = `${event.currentTarget.offsetLeft}px`;
     activeBox.current.style.width = `${event.currentTarget.offsetWidth}px`;
     activeBox.current.style.height = `${event.currentTarget.offsetHeight}px`;
-};
-
+  };
 
   const navItems: INavItemType[] = [
     {
@@ -66,7 +64,7 @@ const Navbar: FC<INavbarPropType> = ({ navOpen }) => {
   ];
 
   return (
-    <nav className={`navbar ` + (navOpen ? 'active' : '')}>
+    <nav className={`navbar ` + (navOpen ? "active" : "")}>
       {navItems.map((navItem: INavItemType, key: number) => (
         <a
           href={navItem.link}
@@ -75,13 +73,11 @@ const Navbar: FC<INavbarPropType> = ({ navOpen }) => {
           className={navItem.className}
           onClick={activeCurrentLink}
         >
-            {navItem.label}
+          {navItem.label}
         </a>
       ))}
 
-      <div className="active-box" ref={activeBox}>
-        
-      </div>
+      <div className="active-box" ref={activeBox}></div>
     </nav>
   );
 };

@@ -1,4 +1,3 @@
-
 // Node modules
 
 import { FC } from "react";
@@ -31,7 +30,6 @@ const ProjectCard: FC<IProjectCardPropType> = ({
         <h3 className="title-1 mb-3">{title}</h3>
 
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-end p-1">
-
           <div className="flex flex-wrap items-center gap-2 mb-4 lg:mb-0">
             {tags.map((label: string, key: number) => (
               <span
@@ -42,7 +40,6 @@ const ProjectCard: FC<IProjectCardPropType> = ({
               </span>
             ))}
           </div>
-
 
           <div className="flex items-center sm:justify-between max-sm:justify-between gap-2 lg:justify-self-end">
             {githubLink && (
