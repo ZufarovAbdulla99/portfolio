@@ -6,44 +6,104 @@ import { ISkillItemType } from "../types/SkillItemType";
 
 const skillItems: ISkillItemType[] = [
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
+    imgSrc: "/icons/html.svg",
+    label: "HTML",
+    desc: "Web Markup",
   },
   {
-    imgSrc: "/images/css3.svg",
+    imgSrc: "/icons/css3.svg",
     label: "CSS",
-    desc: "User Interface",
+    desc: "Cascading Style sheets",
   },
   {
-    imgSrc: "/images/javascript.svg",
-    label: "JavaScript",
-    desc: "Interaction",
-  },
-  {
-    imgSrc: "/images/nodejs.svg",
-    label: "NodeJS",
-    desc: "Web Server",
-  },
-  {
-    imgSrc: "/images/expressjs.svg",
-    label: "ExpressJS",
-    desc: "Node Framework",
-  },
-  {
-    imgSrc: "/images/mongodb.svg",
-    label: "MongoDB",
-    desc: "Database",
-  },
-  {
-    imgSrc: "/images/react.svg",
-    label: "React",
-    desc: "Framework",
-  },
-  {
-    imgSrc: "/images/tailwindcss.svg",
+    imgSrc: "/icons/tailwindcss.svg",
     label: "TailwindCSS",
-    desc: "User Interface",
+    desc: "CSS Framework",
+  },
+  {
+    imgSrc: "/icons/javascript.svg",
+    label: "JavaScript",
+    desc: "Programming Language",
+  },
+  {
+    imgSrc: "/icons/typescript.svg",
+    label: "TypeScript",
+    desc: "Programming Language",
+  },
+  {
+    imgSrc: "/icons/node-js.svg",
+    label: "NodeJS",
+    desc: "Javascript Runtime",
+  },
+  {
+    imgSrc: "/icons/expressjs.svg",
+    label: "ExpressJS",
+    desc: "NodeJs Framework",
+  },
+  {
+    imgSrc: "/icons/nest-js.svg",
+    label: "NestJS",
+    desc: "NodeJs Framework",
+  },
+  {
+    imgSrc: "/icons/mysql.svg",
+    label: "MySql",
+    desc: "SQL Database",
+  },
+  {
+    imgSrc: "/icons/postgresql.svg",
+    label: "PostgreSql",
+    desc: "SQL Database",
+  },
+  {
+    imgSrc: "/icons/mongodb.svg",
+    label: "MongoDB",
+    desc: "NoSQL Database",
+  },
+  {
+    imgSrc: "/icons/redis.svg",
+    label: "Redis",
+    desc: "NoSQL Database",
+  },
+  {
+    imgSrc: "/icons/sequelize.svg",
+    label: "Sequelize",
+    desc: "ORM",
+  },
+  {
+    imgSrc: "/icons/typeorm.svg",
+    label: "TypeOrm",
+    desc: "ORM",
+  },
+  {
+    imgSrc: "/icons/prisma.svg",
+    label: "Prisma",
+    desc: "ORM",
+  },
+  {
+    imgSrc: "/icons/mongoose.svg",
+    label: "Mongoose",
+    desc: "ODM",
+  },
+  {
+    imgSrc: "/icons/react.svg",
+    label: "React",
+    desc: "Library",
+  },
+  {
+    imgSrc: "/icons/next-js.svg",
+    label: "NextJs",
+    desc: "React's Framework",
+  },
+  {
+    imgSrc: "/icons/material-ui.svg",
+    label: "Material UI",
+    desc: "UI Library",
+  },
+  {
+    imgSrc: "/icons/ant-design.svg",
+    label: "Ant Design",
+    desc: "UI Library",
   },
 ];
 
