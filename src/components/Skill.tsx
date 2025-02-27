@@ -91,7 +91,7 @@ const skillItems: ISkillItemType[] = [
     desc: "Library",
   },
   {
-    imgSrc: "/icons/next-js.svg",
+    imgSrc: "/icons/nextjs-icon.svg",
     label: "NextJs",
     desc: "React's Framework",
   },
@@ -104,6 +104,26 @@ const skillItems: ISkillItemType[] = [
     imgSrc: "/icons/ant-design.svg",
     label: "Ant Design",
     desc: "UI Library",
+  },
+  {
+    imgSrc: "/icons/git.svg",
+    label: "Git",
+    desc: "Version Control System",
+  },
+  {
+    imgSrc: "/icons/github.svg",
+    label: "Github",
+    desc: "Cloud-based platform",
+  },
+  {
+    imgSrc: "/icons/docker.svg",
+    label: "Docker",
+    desc: "Container platform",
+  },
+  {
+    imgSrc: "/icons/deployment.svg",
+    label: "Deployment",
+    desc: "Deploy web apps",
   },
 ];
 
