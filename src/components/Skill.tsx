@@ -91,7 +91,7 @@ const skillItems: ISkillItemType[] = [
     desc: "Library",
   },
   {
-    imgSrc: "/icons/nextjs-icon.svg",
+    imgSrc: "/icons/next-js.svg",
     label: "NextJs",
     desc: "React's Framework",
   },
